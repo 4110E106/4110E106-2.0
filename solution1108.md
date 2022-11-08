@@ -17,20 +17,36 @@
     - HTTPS是一種透過計算機網路進行安全通訊的傳輸協定。
     - HTTPS經由HTTP進行通訊，但利用SSL/TLS來加密封包。
     - HTTPS開發的主要目的，是提供對網站伺服器的身分認證，保護交換資料的隱私與完整性。
-  - DNS vs DNSsec
-    - DNS的原始設計不包含任何安全細節；相反的，它被設計成一個可擴增的分散式系統(Distributed system)。 域名系統安全擴展
-    - DNSSEC嘗試在其中添加安全性，同時仍保持向下相容性。
-- telnet vs ssh
-- ftp vs sftp
-- smtp, pop3
-- SNMP
-
+ - DNS vs DNSsec
+   - DNS
+      - DNS的原始設計不包含任何安全細節；相反的，它被設計成一個可擴增的分散式系統(Distributed system)。 域名系統安全擴展
+    - DNSsec
+      - DNSSEC嘗試在其中添加安全性，同時仍保持向下相容性。
+ - telnet vs ssh
+   - telnet
+      - telnet是明码传输
+   - ssh 
+      - SSH是加密传输
+  - ftp vs sftp
+    - ftp
+       - ftp連接到在遠程主機上的FTP伺服器程序。用戶通過客戶機程序向伺服器程序發出命令，伺服器程序執行用戶所發出的命令，並將執行的結果返回到客戶機。
+     - sftp
+        - 一種多傳輸協議，相當於加密版的FTP。當你在FTP伺服器上收發文件的時候，你面臨兩個風險。
+  - smtp, pop3
+    - pop3
+      - pop3透過電腦上的Outlook將主機上的信件下載到電腦上，如果Outlook沒有特別設定，Outlook不會將主機上的郵件刪除。
+     - smtp
+        - smtp舉例來說，你使用Outlook把10封信下載到電腦上，你看完信後，將其中的兩封信刪除，這個狀態會被同步到主機上、主機上的這兩封信也會被刪除。
+    - SNMP
+      - SNMP 是用於管理和監視網路元素的廣泛接受的通訊協定之一。大多數專業級網路元素都具有配套的 SNMP 代理程式。必須啟用并設定這些代理程式，以與網路管理系統 (NMS) 進行通訊。
 ## 簡述底下傳輸層協定(英文全名與簡單功能說明):TCP vs UDP
 - TCP
   - reliable(可靠的) vs unreliable(不可靠的)
   - TCP three-way handshaking(三項交握)  
+     - TCP 是一種 連接導向 (connection-oriented) 的通訊協定，是其建立虛擬連線 (virtual connection) 的方式。
   - TCP syn flood attack
-
 ## 簡述底下網路層協定(英文全名與簡單功能說明): IP   ICMP
-- IP
-- ICMP
+  - IP
+      - 標識主機：更具體地說，標識其網路介面，並且提供主機在網路中的位置。
+  - ICMP
+      - 在lP主機、路由器之間傳遞網路通不通、主機是否可達、路由是否可用等反映網路本身狀況的控制消息。
