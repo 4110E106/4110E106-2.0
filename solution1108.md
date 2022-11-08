@@ -17,7 +17,7 @@
     - HTTPS是一種透過計算機網路進行安全通訊的傳輸協定。
     - HTTPS經由HTTP進行通訊，但利用SSL/TLS來加密封包。
     - HTTPS開發的主要目的，是提供對網站伺服器的身分認證，保護交換資料的隱私與完整性。
-- DNS vs DNSsec
+  - DNS vs DNSsec
     - DNS的原始設計不包含任何安全細節；相反的，它被設計成一個可擴增的分散式系統(Distributed system)。 域名系統安全擴展
     - DNSSEC嘗試在其中添加安全性，同時仍保持向下相容性。
 - telnet vs ssh
